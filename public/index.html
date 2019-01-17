@@ -1,23 +1,152 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS/HTML Workshop with Privateaser</title>
+      <title>CSS/HTML Workshop with Privateaser</title>
+
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+      <style type="text/css">
+
+          #head{
+              background-color: cornflowerblue;
+              height: 30px;
+          }
+
+          #bar{
+              margin-top: 8%;
+          }
+
+          .table{
+              color: white;
+          }
+
+          #actors{
+              margin-top: 1%;
+              align-content: center;
+              color: black;
+              background-color: cornsilk;
+              text-align: center;
+          }
+
+          .t1{
+              color:floralwhite;
+              font-size: large;
+              text-align: center;
+          }
+
+          .bodystyle{
+              filter:alpha(opacity=50);
+              width:100%;
+              position:absolute;
+              background:url(pic/p1_1.jpg)no-repeat;
+              background-size:cover;
+          }
+
+      </style>
+      <script>
+          compute.onclick=function(){
+
+
+          }
+      </script>
+
   </head>
-  <body>
+
+  <body class="bodystyle" >
+
+<!--
+    <div id="head"></div>
+-->
+    <br>
+
     <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+        <h3 class="t1">Bar Information</h3>
+        <div class="table">
+            <table align="center">
+                <tr>
+                    <td width="150px">
+                        Bar name:
+                    </td>
+                    <td>
+                        <input class="js-name" type="text" placeholder="Bar name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Price by hour:
+                    </td>
+                    <td>
+                        <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Price by person:
+                    </td>
+                    <td>
+                        <input class="js-price-by-person" type="number" placeholder="Price by person"/><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
     </div>
+
     <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+        <h3 class="t1">Booker Information</h3>
+        <div class="table">
+            <table align="center">
+                <tr>
+                    <td width="150px">
+                        Booker name:
+                    </td>
+                    <td>
+                        <input class="js-name" type="text" placeholder="Booker name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Time in h:
+                    </td>
+                    <td>
+                        <input class="js-time" type="number" placeholder="Time in h"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Persons:
+                    </td>
+                    <td>
+                        <input class="js-persons" type="number" placeholder="Persons"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="font-size: small">
+                        deductible option<input class="js-option" type="checkbox" placeholder="Deductible option"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <br><button id="compute">Compute</button>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
     </div>
-    <button id="compute">Compute</button>
+
+
+
     <div id="actors"></div>
-    <script src="privateaser.js"></script>
-    <script src="index.js"></script>
+
+
+    <div id="show">
+        <script src="privateaser.js"></script>
+
+        <script src="index.js"></script>
+    </div>
+
   </body>
+
 </html>
